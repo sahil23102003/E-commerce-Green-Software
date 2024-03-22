@@ -36,7 +36,17 @@ class ShoppingCart:
             print(f"Removed {product.name} from the cart.")
         else:
             print(f"{product.name} is not in your cart.")
-
+    def search_product(self,product_id):
+        for product in products:
+            if(product.id != product_id):
+                continue
+            else:
+                print("Product Found!")
+                print("Product Name:"+product.name)
+                print("Price:"+str(product.price))
+                return
+        print("product not found!!")    
+    
 class Customer:
     def __init__(self, name, email):
         self.name = name
@@ -87,6 +97,7 @@ while True:
     print("2. Display cart")
     print("3. Remove a product from the cart")
     print("4. Checkout")
+    print("5. Search")
     user_input = input("Enter option number: ")
 
     if user_input == '1':
@@ -115,5 +126,9 @@ while True:
         customer.checkout()
         break
 
+    elif user_input == '5':
+        entered_id = int(input("Enter Product ID:"))
+        customer.shopping_cart.search_product(product_id=entered_id)
+        
     else:
         print("Invalid option. Please try again.")
