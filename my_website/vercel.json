@@ -1,8 +1,14 @@
 {
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "djecommerce/wsgi.py"
-      }
-    ]
-  }
+  "builds":[
+    {
+      "src":"djecommerce/wsgi.py",
+      "use":"@vercel/python"
+    }
+  ],
+  "routes":[
+    {
+      "src":"(.*)",
+      "dest":"djecommerce/wsgi.py"
+    }
+  ]
+}
