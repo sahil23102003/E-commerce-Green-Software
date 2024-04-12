@@ -3,7 +3,7 @@ from pymongo import MongoClient
 
 app = Flask(__name__)
 
-client = MongoClient("mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.2.3") 
+client = MongoClient("mongodb://localhost:27017") 
 
 db = client["e-commerce"]  # Replace with your MongoDB database name
 products_collection = db["products"]
