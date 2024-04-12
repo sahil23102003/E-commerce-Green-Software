@@ -52,7 +52,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'djecommerce.wsgi.application'
+WSGI_APPLICATION = 'djecommerce.wsgi.app'
 
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
