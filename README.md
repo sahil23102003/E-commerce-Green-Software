@@ -18,7 +18,7 @@ Installation
 Downloading files:
 
 
-git clone 
+git clone https://github.com/sahil23102003/E-commerce-Green-Software.git
 Installing requirements:
 
 pip install -r requirements.txt
