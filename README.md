@@ -11,14 +11,19 @@ Boostrap + custom CSS UI
 
 
 Prerequisties
+
 Python
 Stripe API key for Stripe Payment Integration
 Stripe webhook setup
+
 Installation
+
 Downloading files:
 
 
 git clone https://github.com/sahil23102003/E-commerce-Green-Software.git
+
+
 Installing requirements:
 
 pip install -r requirements.txt
